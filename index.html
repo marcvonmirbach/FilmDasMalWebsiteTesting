@@ -1,3 +1,4 @@
+<! -- https://assetstore.unity.com/packages/tools/gui/responsive-webgl-template-117308 -->
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
@@ -6,20 +7,19 @@
     <title>Unity WebGL Player | FilmDasMal Website</title>
   </head>
   <body style="text-align: center">
-    <canvas id="unity-canvas" width=960 height=600 style="width: 960px; height: 600px; background: #231F20"></canvas>
-    <script src="Build/ControlsMobile.loader.js"></script>
+    <canvas id="unity-canvas" style="width: 960px; height: 600px; background: #231F20"></canvas>
+    <script src="Build/ControlsMobileResponsive.loader.js"></script>
     <script>
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/ControlsMobile.data",
-        frameworkUrl: "Build/ControlsMobile.framework.js",
-        codeUrl: "Build/ControlsMobile.wasm",
+        dataUrl: "Build/ControlsMobileResponsive.data",
+        frameworkUrl: "Build/ControlsMobileResponsive.framework.js",
+        codeUrl: "Build/ControlsMobileResponsive.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "FilmDasMal",
         productName: "FilmDasMal Website",
         productVersion: "0.1",
-        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
-        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       });
     </script>
+    <script src="TemplateData/responsive.js"></script>
   </body>
 </html>
